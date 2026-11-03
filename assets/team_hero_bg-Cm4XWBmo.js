@@ -1,0 +1,1 @@
+var e=`/ElementSkill-Redesign/assets/team_hero_bg-CxZ2tWGo.webp`;export{e as t};
