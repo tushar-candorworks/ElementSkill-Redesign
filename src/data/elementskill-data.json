@@ -1,0 +1,568 @@
+{
+  "_meta": {
+    "source": "https://www.elementskill.com/",
+    "scraped": "2026-10-30",
+    "note": "All copy is taken from the live site. Fields marked TODO could not be extracted (logos, some images, contact form, bio pages) and must be supplied by the client or pulled from the existing WordPress media library.",
+    "currentStack": "WordPress + WPBakery Page Builder (Salient-style theme)"
+  },
+
+  "site": {
+    "name": "ElementSkill",
+    "legalName": "Element Skill LLP",
+    "tagline": "One Stop Shop For All Your Talent Needs",
+    "footerTagline": "Where Vision Meets Implementation, Excellence Follows",
+    "seoTitle": "Expert Consulting Strategic Hiring and Skillful Development",
+    "seoDescription": "At Element Skill, we specialize in expert consulting, strategic hiring, and skillful development to drive success. Explore our services and empower your workforce for sustained growth.",
+    "logo": "https://www.elementskill.com/wp-content/uploads/2023/12/MicrosoftTeams-image-71.png",
+    "favicon": "https://www.elementskill.com/wp-content/uploads/2023/12/MicrosoftTeams-image-70.png",
+    "copyright": "© 2026 Copyright Elementskill | All Rights Reserved",
+    "address": {
+      "line1": "4th Floor, Westend Center 3, Aundh",
+      "city": "Pune",
+      "postalCode": "411007",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "emails": {
+      "sales": "sales@elementskill.com",
+      "info": "info@elementskill.com"
+    },
+    "contactNote": "For speaking opportunities please reach out :",
+    "social": [
+      { "platform": "X (Twitter)", "url": "https://twitter.com/element_skill" },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/elementskill.social/"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/element-skill-llp/"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/elementskill/"
+      },
+      { "platform": "Email", "url": "mailto:sales@elementskill.com" }
+    ]
+  },
+
+  "navigation": [
+    { "label": "Home", "url": "/" },
+    { "label": "Our Team", "url": "/our-team" },
+    {
+      "label": "Articles & Research Papers",
+      "url": "/articles-research-papers"
+    },
+    { "label": "Talks & Podcast", "url": "/talks-and-podcast" },
+    { "label": "About Us", "url": "/about-us" },
+    { "label": "Contact Us", "url": "/contact", "style": "cta" }
+  ],
+
+  "services": [
+    {
+      "id": "hiring",
+      "number": "01",
+      "symbol": "Hi",
+      "title": "Hiring",
+      "summary": "Strategic, niche and leadership hiring delivered as an extension of your team.",
+      "url": "/hiring",
+      "externalUrl": "https://niyojsetu.com/#/home",
+      "externalNote": "The Hiring tile on the current homepage links to the Niyojsetu platform; the 'Read more' link goes to /hiring."
+    },
+    {
+      "id": "skilling",
+      "number": "02",
+      "symbol": "Sk",
+      "title": "Skilling",
+      "summary": "Leadership and capability programs, coaching and facilitation.",
+      "url": "/skilling"
+    },
+    {
+      "id": "assessment",
+      "number": "03",
+      "symbol": "As",
+      "title": "Assessment",
+      "summary": "Know Your North (KYN) — a self-discovery tool that helps identify direction.",
+      "url": "/assessment"
+    }
+  ],
+
+  "pages": {
+    "home": {
+      "hero": {
+        "headline": "One Stop Shop For All Your Talent Needs",
+        "primaryCta": { "label": "Explore Services", "url": "#services" },
+        "secondaryCta": { "label": "Contact us", "url": "/contact" }
+      },
+      "sections": [
+        "hero",
+        "services",
+        "customers",
+        "testimonials",
+        "stats",
+        "footerCta"
+      ],
+      "customersSection": {
+        "title": "Our Customers",
+        "logos": "TODO: client logo files are loaded dynamically on the live site and were not extractable. Known logos from testimonials: Sapiens, TE Connectivity, SG Analytics, Gentrack, Omya, Proeon, BTB (Be the Bank), Amara Raja."
+      },
+      "testimonialsTitle": "What Our Clients Say",
+      "statsTitle": "What We Delivered"
+    },
+
+    "hiring": {
+      "url": "/hiring",
+      "headline": "You build the vision, we bring the talent to power it",
+      "intro": "At ElementSkill, we connect you with the right talent to power your business forward. Our hiring solutions are designed to identify skilled professionals who align with your goals, culture, and vision—ensuring the right fit for long-term success.",
+      "teamTitle": "Meet Our Team",
+      "teamRef": "team.hiring"
+    },
+
+    "skilling": {
+      "url": "/skilling",
+      "canonical": "https://www.elementskill.com/skilling-2/",
+      "headline": "Skilling",
+      "programsTitle": "Our Learning Programs",
+      "programs": [
+        {
+          "title": "Design Thinking",
+          "description": "Innovation frameworks for product and process transformation"
+        },
+        {
+          "title": "Adaptability & Resilience",
+          "description": "Building agile leadership in volatile and uncertain environments."
+        },
+        {
+          "title": "Growth Mindset",
+          "description": "Cultivating continuous learning culture across the organization."
+        },
+        {
+          "title": "AI Advantage",
+          "description": "Leveraging AI for workforce productivity and strategic advantage."
+        },
+        {
+          "title": "Adaptive Leadership",
+          "description": "Diagnosing systemic challenges, building team resilience, fostering a culture of continuous learning, managing productive tension"
+        },
+        {
+          "title": "Ambidextrous Leadership",
+          "description": "Drives both high innovation and operational efficiency by flexibly balancing two opposing styles: opening behaviors."
+        }
+      ],
+      "bookExpert": {
+        "title": "To book an expert a drop a request",
+        "email": "info@elementskill.com"
+      },
+      "statsTitle": "Building Leaders For Tomorrow",
+      "stats": [
+        { "value": 200, "label": "Coaching Hours" },
+        { "value": 700, "label": "Facilitation Hours" },
+        { "value": 20, "label": "Clients" }
+      ]
+    },
+
+    "assessment": {
+      "url": "/assessment",
+      "headline": "Know Your North (KYN)",
+      "subheadline": "Our Self Discovery tool will help you identify your direction.",
+      "cta": { "label": "TODO: add KYN tool link", "url": "" }
+    },
+
+    "about": {
+      "url": "/about-us",
+      "heroHeadline": "You define the role, we find the person who truly fits it",
+      "heroIntro": "ElementSkill is a talent intelligence and HR advisory firm based in Pune, India. We help organisations hire the right leaders, build capability centres, grow their people and make better decisions about how they pay and structure their teams. Our clients range from global technology companies to established industrial groups, and today we work with more than 35 of them.",
+      "headline": "Forces Behind ElementSkill",
+      "peopleRef": "team.leadership",
+      "storyHeadline": "Our Story",
+      "storyText": "ElementSkill began with a simple belief: most hiring and people problems are not about finding more people. They are about understanding what a role truly needs and what a person truly brings. Our founder, Reetu Raina, spent 25 years in corporate HR leadership, rising to Chief Human Resources Officer and managing teams across geographies around the world. She saw the same gaps repeat in every organisation: hiring done in a hurry, leadership development that never reached the people who needed it, and pay decisions made without good data. In 2023 she started ElementSkill to close those gaps from the outside, with the experience of someone who had lived them from the inside.",
+      "opportunityHeadline": "Building Opportunity",
+      "opportunityText": "ElementSkill is an all-women startup. We are proud to create meaningful employment for young women in tier 2 and tier 3 cities, giving them a place in a professional, global-standard work environment. The people who deliver your work are part of a team that is changing who gets access to careers like these."
+    },
+
+    "team": {
+      "url": "/our-team",
+      "headline": "You build the vision, we bring the talent to power it",
+      "intro": "At ElementSkill, we connect you with the right talent to power your business forward. Our hiring solutions are designed to identify skilled professionals who align with your goals, culture, and vision—ensuring the right fit for long-term success.",
+      "title": "Meet Our Team",
+      "faqTitle": "FAQ"
+    },
+
+    "articles": {
+      "url": "/articles-research-papers",
+      "articlesTitle": "Articles",
+      "researchTitle": "Research"
+    },
+
+    "talks": {
+      "url": "/talks-and-podcast",
+      "podcastTitle": "Podcast",
+      "podcastNote": "These Podcasts were Co hosted by Reetu for Amdocs while she was Head of Talent Management there",
+      "podcastEpisodes": "TODO: podcast episode list is not present in extracted HTML (likely embedded player).",
+      "talksTitle": "Talks"
+    },
+
+    "contact": {
+      "url": "/contact",
+      "note": "TODO: contact page was not scraped. Recommended fields: name, work email, company, interest (Hiring / Skilling / Assessment / Speaking), message."
+    }
+  },
+
+  "team": {
+    "leadership": [
+      {
+        "name": "Reetu Raina",
+        "role": "Founder",
+        "bio": "Reetu, an Ex CHRO with 25+ years’ experience, is a research-driven practitioner, TEDx speaker, and award-winning leader recognized for her work on Millennials, leadership, high-performance culture. She founded Elementskill to help industries build the right culture, leadership, and employee experience, contributing to India’s global growth.",
+        "bioUrl": "https://www.elementskill.com/reetu-raina-bio/",
+        "linkedin": "https://in.linkedin.com/in/reeturaina",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2025/10/Reetu-Raina-3.png"
+      },
+      {
+        "name": "Vipul Verma",
+        "role": "Partner",
+        "bio": "An alumnus of IIT-BHU and IIM Lucknow, Vipul has led 100+ transformation initiatives across McKinsey and the Big 4, building high-performing teams with measurable impact. A Six Sigma Black Belt, he’s a visionary leader blending precision, people-focus, and executional rigor to drive lasting change.",
+        "bioUrl": "https://www.elementskill.com/vipul-verma/",
+        "linkedin": "https://www.linkedin.com/in/vipulverma/",
+        "photo": "TODO"
+      },
+      {
+        "name": "Shekhar Jakhadi",
+        "role": "Advisor",
+        "bio": "Shekhar Jakhadi is a global technology and business leader with over 20 years of experience building and scaling enterprises across the U.S., Europe, India, and the Middle East. He has also been recognized at an international level through his selection for the Delegation of the Government of the Netherlands for Innovation, where he represented entrepreneurial innovation for two consecutive years.",
+        "bioUrl": "https://www.elementskill.com/shekhar-jakhadi/",
+        "linkedin": "https://www.linkedin.com/in/jakhadi/",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2025/10/Shekhar-1.png"
+      }
+    ],
+    "hiring": [
+      {
+        "name": "Khushi Raina",
+        "role": "Customer Delivery Lead",
+        "bio": "Khushi Raina brings a rare combination of entrepreneurial drive and precision in talent building. As the founder of ElementSkill’s hiring vertical, she has built her reputation on one core belief: the right people, hired the right way, can transform a business. With a foundation from Delhi University and a deeply ingrained client-first mindset, Khushi has helped companies scale their teams rapidly, delivering exceptional talent within defined timelines and budgets. Her approach is rooted in understanding each client’s vision and building teams that don’t just fill roles, but fuel growth. Today, she is recognized as a trusted partner to organizations looking to scale efficiently, combining speed, quality, and strategic insight to consistently exceed expectations.",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2026/08/Gemini3_Generated_Image_bqfzk2bq.png"
+      },
+      {
+        "name": "Shagun Dassi",
+        "specialty": "Expert Product & Platform",
+        "bio": "Shagun brings deep expertise in product and platform hiring, with a sharp ability to identify high-quality talent across enterprise ecosystems such as ServiceNow, Salesforce, and other digital platforms.",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2026/03/Shagun-2.png"
+      },
+      {
+        "name": "Shakshi Chib",
+        "specialty": "Expert Application & Technology",
+        "bio": "Shakshi has extensive experience leading hiring mandates for large IT firms across key domains including Cloud, Infrastructure, and ESG.",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2026/03/Shakshi.png"
+      },
+      {
+        "name": "Falak Koul",
+        "specialty": "Expert Specialty Chemical & Food Tech",
+        "bio": "Falak has built expertise in talent acquisition by leading hiring across the FoodTech and specialty chemicals sectors.",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2026/03/Falak-3.png"
+      },
+      {
+        "name": "Rakhi Rajput",
+        "specialty": "Expert Energy Lithium & Ion Batteries",
+        "bio": "Rakhi brings strong expertise in the energy sector and has played a key role in building talent networks focused on lithium-ion battery technology, electrode manufacturing, cell assembly and many more.",
+        "photo": "https://www.elementskill.com/wp-content/uploads/2026/03/Rakhi-3.png"
+      }
+    ]
+  },
+
+  "stats": {
+    "delivered": {
+      "title": "What We Delivered",
+      "headline": { "value": 35, "label": "Enterprise Clients Globally" },
+      "breakdown": [
+        { "value": 20, "label": "Tech" },
+        { "value": 8, "label": "GCC" },
+        { "value": 5, "label": "Specialty Chemicals" },
+        { "value": 2, "label": "Energy" },
+        { "value": 2, "label": "BFSI" }
+      ]
+    },
+    "skilling": {
+      "title": "Building Leaders For Tomorrow",
+      "items": [
+        { "value": 200, "label": "Coaching Hours" },
+        { "value": 700, "label": "Facilitation Hours" },
+        { "value": 20, "label": "Clients" }
+      ]
+    }
+  },
+
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Orit Kraitsman",
+      "role": "Global VP HR P&C Division",
+      "company": "Sapiens",
+      "service": "skilling",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2024/05/1516769109385.jpg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2024/05/sapiens_main_logo_website.webp",
+      "short": "Reetu conducted a session for our HR team in India...",
+      "quote": "Reetu conducted a session for our HR team in India. We have enjoyed the collaboration and mutual work with Reetu. Reetu was very professional and attentive to our needs. Reetu’s vast experience was demonstrated during the session itself and the team really enjoyed. The content was interesting and practical."
+    },
+    {
+      "id": "t2",
+      "name": "Aditya Palthi",
+      "role": "Head – Cell Operations for Giga Factories",
+      "company": "Amara Raja",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2026/09/Aditya-Palthi.png",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2026/09/Amara-raja.png",
+      "short": "ElementSkill has been very resourceful in finding the apt talent...",
+      "quote": "ElementSkill has been very resourceful in finding the apt talent for niche roles in my team. Though our industry is nascent to Indian market, team at ElementSkill was quick to understand our requirements, analyse the market both within and outside India, and pool up possible prospects within a short amount of time to successfully close key positions. The team is proactive and very pleasant to work with, making the recruitment process a highly collaborative and efficient experience. Looking forward to long lasting partnership. Way to go ElementSkill team. You set standards pretty high!"
+    },
+    {
+      "id": "t3",
+      "name": "Archana Srivastava",
+      "role": "Head HR",
+      "company": "TE Connectivity",
+      "service": "consulting",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2024/09/1721934721965-300x300.jpeg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2024/09/TE_Connectivity_logo.svg_-300x162.png",
+      "short": "ElementSkill played a pivotal role in supporting the organization...",
+      "quote": "ElementSkill played a pivotal role in supporting the organization design activity for the auto business of TE Connectivity India. Their innovative approach, rooted in design thinking, enabled us to align our strategy with people, fostering a culture of collaboration and innovation. ElementSkill’s tailored solutions truly resonated with our business needs, helping us drive impactful and sustainable results. I highly recommend them to any organization looking to transform their structure and unlock new growth opportunities."
+    },
+    {
+      "id": "t4",
+      "name": "Vijay Totlani",
+      "role": "VP, R&D Engineering & Head of India Centre",
+      "company": "BTB India",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2025/09/Vijay-Totlani.jpg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2025/09/Be-the-bank.jpg",
+      "short": "I would like to extend my heartfelt appreciation to ElementSkill...",
+      "quote": "I would like to extend my heartfelt appreciation to ElementSkill for being an exceptional and dependable vendor partner. Your unwavering commitment, dedication, and tireless efforts have played a critical role in helping us close key hiring positions on time, often exceeding our expectations in both quality and efficiency. The partnership with ElementSkill has not only added immense value to our talent acquisition process at BTB, but has also proven to be a true strategic advantage. We greatly appreciate your continued support and look forward to a long-term engagement built on mutual trust, collaboration, and shared success. I genuinely value this collaboration and look forward to building a long-term, successful partnership together."
+    },
+    {
+      "id": "t5",
+      "name": "Dr. Kiran Bala",
+      "role": "CHRO",
+      "company": "SG Analytics",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-18-at-3.50.37-PM.jpeg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2024/07/sg_analytics_logo-1.jpg",
+      "short": "ElementSkill has been my go-to partner for any critical...",
+      "quote": "ElementSkill has been my go-to partner for any critical, niche, or strategic hiring. A partner you can totally rely on and works with you day in and day out! I have been very impressed with their speed to quickly adapt, modify and understand the requirements to ensure our talent needs are met with the most suitable talent within the timelines we are looking at. In addition to that, I truly value the strategic inputs and market insights that are shared to ensure we are not blindsided in our talent strategy and are constantly evolving with the changing talent landscape. Looking forward to engaging on other areas and keep strengthening the relationship."
+    },
+    {
+      "id": "t6",
+      "name": "Gary Cheng",
+      "role": "Global Technical Support – APAC",
+      "company": "Snowflake",
+      "service": "skilling",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2024/05/1516279026864.jpg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2026/09/snowflake.png",
+      "short": "Reetu was a highly accomplished coach who carefully seeks...",
+      "quote": "Reetu was a highly accomplished coach who carefully seeks to understand our needs and objectives as she prepares her workshop for my team. Her workshop was engaging, enlightening and empowering. Her workshop incorporated active participation and practical activities to emphasize the key learnings for the participants as well as providing habit forming exercises that can stay with the participants long after the workshop. Thank you."
+    },
+    {
+      "id": "t7",
+      "name": "Vani Vasudeva",
+      "role": "People Experience Director - India & Product Development",
+      "company": "Gentrack Ltd (Global)",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2026/07/Vani-Vasudeva.png",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2026/09/gentrack_logo.png",
+      "short": "When it comes to having a trusted partner in talent acquisition, Element Skill is one of the first names that comes to mind. Reetu is a highly credible...",
+      "quote": "When it comes to having a trusted partner in talent acquisition, ElementSkill is one of the first names that comes to mind. Reetu is a highly credible, well-connected leader who is deeply respected for her expertise in global talent acquisition, leadership coaching, business partnering, and RPO management. What sets Reetu and the ElementSkill team apart is their genuine partnering approach. They invest the time to understand the business, build trusted relationships, think creatively to solve complex hiring challenges, and consistently deliver strong outcomes for all stakeholders. It's been a engaging with Reetu and the ElementSkill team, and I wouldn't hesitate to recommend them to any organisation looking for a strategic, high-impact talent acquisition partner."
+    },
+    {
+      "id": "t8",
+      "name": "Swati Dogra",
+      "role": "Head of HR - South Asia",
+      "company": "Omya",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2025/03/Swati-Image.jpeg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2025/03/Logo_Omya.svg_-300x198.png",
+      "short": "ElementSkill is not just a premier recruitment and consulting firm...",
+      "quote": "ElementSkill is not just a premier recruitment and consulting firm- they distinguish themselves as dedicated partners who collaborate closely with clients at every stage of their talent needs. Working with Reetu has been a transformative experience; she has been both a recruitment partner and a mentor. The market & talent insights that she has shared have been instrumental in helping us develop a robust people strategy that aligns seamlessly with our business objectives. Reetu and her team consistently go above and beyond to provide support, demonstrating an unwavering commitment to their clients’ success. I highly recommend ElementSkill to any organization seeking a strategic partner in the space of talent acquisition, leadership and organizational development"
+    },
+    {
+      "id": "t9",
+      "name": "Dr Bidan Das",
+      "role": "Founder & Managing Director",
+      "company": "Octavo",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2024/05/1704793961840.jpg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2024/05/logo-new-2.png",
+      "short": "We collaborated with ElementSkill on a challenging healthcare...",
+      "quote": "We collaborated with ElementSkill on a challenging healthcare assignment for hiring Despite numerous hurdles and impediments, the resilience and commitment demonstrated by the ElementSkill team were exceptional. Their distinctive approach and dedication to delivering results set them apart from many other partners we have worked with."
+    },
+    {
+      "id": "t10",
+      "name": "Ashish Korde",
+      "role": "Co-Founder",
+      "company": "Proeon",
+      "service": "hiring",
+      "photo": "https://www.elementskill.com/wp-content/uploads/2025/09/Ashish_Korde.jpeg",
+      "logo": "https://www.elementskill.com/wp-content/uploads/2025/09/Proeons.jpg",
+      "short": "For any growing start-up, building the right team is absolutely...",
+      "quote": "For any growing start-up, building the right team is absolutely critical for success. Yet, finding the right talent is never easy. Beyond skills and competencies, we seek people who share our values, believe in our mission, and are willing to take bold risks. Equally important is finding the right talent acquisition partner who truly understands this need. We had an excellent experience working with ElementSkill in building our team. The founder, Reetu Raina, personally took the time to meet our existing team, experience our products, and deeply understand our vision, values, and culture. This laid the perfect foundation for identifying the right people for us. I would strongly recommend ElementSkill to any fast-growing organization. They not only bring expertise and professionalism but also the right mindset to partner with founders in their growth journey."
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "How does ElementSkill find the right talent for our business?",
+      "answer": "At ElementSkill, we go beyond resume matching. We take the time to understand your business, team structure, culture, and role expectations to identify talent that is not only qualified, but also aligned with your long-term growth goals."
+    },
+    {
+      "question": "What makes ElementSkill different from traditional hiring partners?",
+      "answer": "We work as an extension of your team, not just as an external vendor. Our approach combines market insight, strategic hiring expertise, and a strong focus on quality to help businesses close critical roles faster and more effectively."
+    },
+    {
+      "question": "What kind of roles and industries does ElementSkill support?",
+      "answer": "We support hiring across a wide range of industries and functions, including Technology, Manufacturing, BFSI, Energy, Specialty Chemicals, and Healthcare, along with leadership, niche, and strategic hiring mandates. Our team can handle both high-volume hiring and specialized talent requirements."
+    }
+  ],
+
+  "industries": [
+    "Technology",
+    "GCC",
+    "Specialty Chemicals",
+    "Energy",
+    "BFSI",
+    "Manufacturing",
+    "Healthcare",
+    "FoodTech"
+  ],
+
+  "articles": [
+    {
+      "title": "Unlocking career potential: The rise of internal mobility as a powerful strategy for employee advancement",
+      "topics": ["StrategicHR"],
+      "publisher": "ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/hrtech/talent-acquisition-and-management/unlocking-career-potential-the-rise-of-internal-mobility-as-a-powerful-strategy-for-employee-advancement/106046654"
+    },
+    {
+      "title": "Democratised workplace: what it is and why it matters?",
+      "topics": ["StrategicHR"],
+      "publisher": "ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/workplace-4-0/democratised-workplace-what-it-is-and-why-it-matters/97247649"
+    },
+    {
+      "title": "How employee-centric workplace will define the future of work?",
+      "topics": ["StrategicHR", "EVP"],
+      "publisher": "ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/workplace-4-0/employee-engagement/how-employee-centric-workplace-will-define-the-future-of-work/95391050"
+    },
+    {
+      "title": "Why EVP is Key for Talent Retention",
+      "topics": ["StrategicHR", "EVP"],
+      "publisher": "ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/workplace-4-0/talent-management/why-evp-is-key-for-talent-retention/86335821"
+    },
+    {
+      "title": "Redefining Organisational Design in New Normal",
+      "topics": ["StrategicHR"],
+      "publisher": "ET HRWorld",
+      "url": "https://hr.economictimes.indiatimes.com/news/hrtech/organization-development/redefining-organisational-design-in-new-normal/80277177"
+    },
+    {
+      "title": "Learnability: A New Organizational Learning Mindset",
+      "topics": ["StrategicHR"],
+      "publisher": "AllThingsTalent",
+      "url": "https://allthingstalent.org/learnability-a-new-organizational-learning-mindset/2021/01/21/"
+    },
+    {
+      "title": "How to make HR future-ready",
+      "topics": ["StrategicHR"],
+      "publisher": "People Matters",
+      "url": "https://www.peoplematters.in/blog/strategic-hr/how-to-make-hr-future-ready-18695"
+    },
+    {
+      "title": "How employee-centric workplace will define the future of work? (Timesascent)",
+      "topics": ["EVP"],
+      "publisher": "Times Ascent",
+      "url": "https://timesascent.com/articles/how-employee-centric-workplace-will-define-the-future-of-work-/157006"
+    },
+    {
+      "title": "Reetu Raina, CHRO, Quick Heal on DE&I Challenges in 2021",
+      "topics": ["Diversity&Inclusion"],
+      "publisher": "Sights In Plus",
+      "url": "https://sightsinplus.com/interview/chro/reetu-raina-chro-quick-heal-on-dei-challenges-in-2021/"
+    },
+    {
+      "title": "Are data-driven decisions the best decisions?",
+      "topics": ["HRAnalytics"],
+      "publisher": "People Matters",
+      "url": "https://www.peoplematters.in/article/hr-technology/are-data-driven-decisions-the-best-decisions-23868"
+    }
+  ],
+
+  "research": [
+    {
+      "title": "The Emerging New World Of Glocalised Leadership",
+      "type": "PDF",
+      "url": "https://www.elementskill.com/wp-content/uploads/2024/01/Glocalised-Leadership-1.pdf"
+    },
+    {
+      "title": "Engaging Indian Millennial At Workplace",
+      "type": "PDF",
+      "url": "https://www.elementskill.com/wp-content/uploads/2024/01/Engaging-Indian-Millennial-_240415-1.pdf"
+    },
+    {
+      "title": "Performance Management Transformation",
+      "type": "Case study (Ivey Publishing)",
+      "url": "https://www.iveypublishing.ca/s/product/quick-heal-technologies-quest-for-a-performancedriven-culture/01tOF000002bbU5YAI"
+    }
+  ],
+
+  "talks": [
+    {
+      "title": "Give or Get- Power is with you | Reetu Raina | TEDxKatra",
+      "event": "TEDx Talks",
+      "duration": "14:14",
+      "url": "https://youtu.be/Xgj08rXR1zQ",
+      "youtubeId": "Xgj08rXR1zQ"
+    },
+    {
+      "title": "Esteemed Centre Stage Interview with Ms. Reetu Raina, Chief Human Resource Officer, Quick Heal.",
+      "event": "International Directors’ Institute",
+      "duration": "33:05",
+      "url": "https://youtu.be/ArAtOLs9-F8",
+      "youtubeId": "ArAtOLs9-F8"
+    },
+    {
+      "title": "Quick Heal Technologies’s Reetu Raina on G-localized leadership and more",
+      "event": "ETHRWorld",
+      "duration": "24:15",
+      "url": "https://youtu.be/oeIvPhGH-yM",
+      "youtubeId": "oeIvPhGH-yM"
+    },
+    {
+      "title": "POWERPUFF WOMEN | Fireside Chat",
+      "event": "My Big Brand Story",
+      "duration": "31:02",
+      "url": "https://youtu.be/RGaFh0T28Os",
+      "youtubeId": "RGaFh0T28Os"
+    },
+    {
+      "title": "World Education Congress 2014",
+      "event": "World Education Congress",
+      "duration": "3:54",
+      "url": "https://youtu.be/yP6sxKg_M7s",
+      "youtubeId": "yP6sxKg_M7s"
+    }
+  ],
+
+  "redirects": {
+    "note": "Preserve SEO: map old WordPress URLs to new routes.",
+    "map": {
+      "/our-team-2/": "/our-team",
+      "/skilling-2/": "/skilling",
+      "/hiring/": "/hiring",
+      "/assessment/": "/assessment",
+      "/about-us/": "/about-us",
+      "/articles-research-papers/": "/articles-research-papers",
+      "/talks-and-podcast/": "/talks-and-podcast",
+      "/contact/": "/contact",
+      "/reetu-raina-bio/": "/about-us/reetu-raina",
+      "/vipul-verma/": "/about-us/vipul-verma",
+      "/shekhar-jakhadi/": "/about-us/shekhar-jakhadi"
+    }
+  }
+}
