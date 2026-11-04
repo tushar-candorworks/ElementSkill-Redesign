@@ -7,6 +7,7 @@ import {
   Landmark,
 } from "lucide-react";
 import deliverBg from "../assets/images/Deliver_Bg.webp";
+import { AnimatedCounter } from "./AnimatedCounter";
 
 const STATS_DATA = [
   {
@@ -99,7 +100,7 @@ export function WhatWeDelivered() {
 
                 <div className="flex items-baseline justify-center mb-2 leading-none">
                   <span className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-white tracking-tight drop-shadow-md">
-                    {item.number}
+                    <AnimatedCounter value={item.number} />
                   </span>
                   {item.suffix && (
                     <span className="text-2xl sm:text-3xl font-semibold text-white ml-0.5 -translate-y-3 sm:-translate-y-4 inline-block drop-shadow-md">

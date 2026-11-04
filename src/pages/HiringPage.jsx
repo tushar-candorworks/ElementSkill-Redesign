@@ -3,6 +3,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import siteData from "../data/elementskill-data.json";
 import { FAQAccordion } from "../components/FAQAccordion";
 import { StatBlock } from "../components/StatBlock";
+import { AnimatedCounter } from "../components/AnimatedCounter";
 import { PageHeader } from "../components/PageHeader";
 
 import khushiImg from "../assets/images/Gemini3_Generated_Image_bqfzk2bq.webp";
@@ -218,7 +219,7 @@ export function HiringPage() {
           <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-6">
             <div className="border-l border-white/20 pl-4">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#38bdf8]">
-                20+
+                <AnimatedCounter value={20} suffix="+" />
               </span>
               <p className="text-xs uppercase tracking-wider text-white/80 mt-1">
                 Tech &amp; Platforms
@@ -226,7 +227,7 @@ export function HiringPage() {
             </div>
             <div className="border-l border-white/20 pl-4">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#38bdf8]">
-                8+
+                <AnimatedCounter value={8} suffix="+" />
               </span>
               <p className="text-xs uppercase tracking-wider text-white/80 mt-1">
                 Global Capability Centers
@@ -234,7 +235,7 @@ export function HiringPage() {
             </div>
             <div className="border-l border-white/20 pl-4">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#38bdf8]">
-                9+
+                <AnimatedCounter value={9} suffix="+" />
               </span>
               <p className="text-xs uppercase tracking-wider text-white/80 mt-1">
                 Chemicals, Energy &amp; BFSI

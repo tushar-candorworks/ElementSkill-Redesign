@@ -1,6 +1,7 @@
 import { Sparkles, ShieldCheck, Target, Award } from "lucide-react";
 import siteData from "../data/elementskill-data.json";
 import { FAQAccordion } from "../components/FAQAccordion";
+import { AnimatedCounter } from "../components/AnimatedCounter";
 
 import teamHeroBg from "../assets/images/team_hero_bg.webp";
 import executivePresentationImg from "../assets/images/Executive-Presentation-in-a-City-Office-Copy.webp";
@@ -275,7 +276,7 @@ export function AboutUsPage() {
         <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="p-5 sm:p-6 rounded-2xl bg-[#f8fafc] border border-[#e5eff3]">
             <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#005a75]">
-              35+
+              <AnimatedCounter value={35} suffix="+" />
             </span>
             <p className="text-xs sm:text-sm font-semibold text-[#455c65] mt-1">
               Enterprise Clients
@@ -283,7 +284,7 @@ export function AboutUsPage() {
           </div>
           <div className="p-5 sm:p-6 rounded-2xl bg-[#f8fafc] border border-[#e5eff3]">
             <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#005a75]">
-              25+ Years
+              <AnimatedCounter value={25} suffix="+ Years" />
             </span>
             <p className="text-xs sm:text-sm font-semibold text-[#455c65] mt-1">
               CHRO Leadership Rigor
@@ -291,7 +292,7 @@ export function AboutUsPage() {
           </div>
           <div className="p-5 sm:p-6 rounded-2xl bg-[#f8fafc] border border-[#e5eff3]">
             <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#005a75]">
-              100+
+              <AnimatedCounter value={100} suffix="+" />
             </span>
             <p className="text-xs sm:text-sm font-semibold text-[#455c65] mt-1">
               Transformations Delivered
