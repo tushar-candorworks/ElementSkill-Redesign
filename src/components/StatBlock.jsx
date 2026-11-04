@@ -9,62 +9,72 @@ export function StatBlock({
   theme = "light",
   className = "",
 }) {
+  const targetValue = Number(value) || 0;
   const prefersReducedMotion =
     typeof window !== "undefined" &&
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const [count, setCount] = useState(() => (prefersReducedMotion ? value : 0));
-  const [hasAnimated, setHasAnimated] = useState(() => prefersReducedMotion);
+  const [count, setCount] = useState(() => (prefersReducedMotion ? targetValue : 0));
   const elementRef = useRef(null);
+  const animatedRef = useRef(false);
+  const rafRef = useRef(null);
 
   useEffect(() => {
-    if (prefersReducedMotion || hasAnimated) return;
+    if (prefersReducedMotion || animatedRef.current) {
+      return;
+    }
 
-    let rafId = null;
+    const currentEl = elementRef.current;
+    if (!currentEl) return;
+
+    const startAnimation = () => {
+      if (animatedRef.current) return;
+      animatedRef.current = true;
+
+      const duration = 1200;
+      const startTime = performance.now();
+
+      const animate = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setCount(Math.round(eased * targetValue));
+
+        if (progress < 1) {
+          rafRef.current = requestAnimationFrame(animate);
+        } else {
+          setCount(targetValue);
+        }
+      };
+
+      rafRef.current = requestAnimationFrame(animate);
+    };
+
+    if (typeof IntersectionObserver === "undefined") {
+      startAnimation();
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-
-          const duration = 1200;
-          const startTime = performance.now();
-
-          const animate = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(eased * value));
-
-            if (progress < 1) {
-              rafId = requestAnimationFrame(animate);
-            } else {
-              setCount(value);
-            }
-          };
-
-          rafId = requestAnimationFrame(animate);
+        if (entry.isIntersecting) {
+          startAnimation();
+          observer.disconnect();
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0.1 },
     );
 
-    const currentEl = elementRef.current;
-    if (currentEl) {
-      observer.observe(currentEl);
-    }
+    observer.observe(currentEl);
 
     return () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
-      if (currentEl) {
-        observer.unobserve(currentEl);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
       }
       observer.disconnect();
     };
-  }, [value, hasAnimated, prefersReducedMotion]);
+  }, [targetValue, prefersReducedMotion]);
 
   const isDark = theme === "dark";
 
