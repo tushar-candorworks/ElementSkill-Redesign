@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, Mic, Clock, ArrowUpRight, ChevronDown } from "lucide-react";
+import { Play, Clock, ArrowUpRight, ChevronDown } from "lucide-react";
 import siteData from "../data/elementskill-data.json";
 import { YouTubeIcon, SpotifyIcon } from "../components/SocialIcons";
 import { PageHeader } from "../components/PageHeader";
@@ -228,7 +228,7 @@ export function TalksPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-[#f8fafc]">
+      <section className="pt-12 sm:pt-16 pb-8 sm:pb-10 px-6 sm:px-8 bg-[#f8fafc]">
         <div className="max-w-[1240px] mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <span className="text-xs uppercase tracking-[0.2em] text-[#005a75] font-bold block mb-2">
@@ -353,7 +353,7 @@ export function TalksPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-gradient-to-b from-[#f0f6f8]/70 via-[#f8fafc] to-[#f8fafc] border-t border-[#e5eff3] relative overflow-hidden">
+      <section className="pt-8 sm:pt-10 pb-16 sm:pb-24 px-6 sm:px-8 bg-gradient-to-b from-[#f0f6f8]/70 via-[#f8fafc] to-[#f8fafc] border-t border-[#e5eff3] relative overflow-hidden">
         <div className="absolute top-10 left-10 pointer-events-none select-none opacity-20 hidden md:block">
           <svg
             className="w-20 h-16 text-[#005a75]"
@@ -375,11 +375,6 @@ export function TalksPage() {
 
         <div className="max-w-[1240px] mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#daf1f6] text-xs text-[#005a75] font-bold uppercase tracking-wider mb-4">
-              <Mic size={14} />
-              <span>Audio Series</span>
-            </div>
-
             <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3">
               <svg
                 className="w-5 sm:w-6 h-5 sm:h-6 text-[#005a75]"
