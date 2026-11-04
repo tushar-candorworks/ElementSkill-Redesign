@@ -117,13 +117,13 @@ export function HiringPage() {
                   className="bg-white rounded-[24px] p-6 border border-[#e5eff3] shadow-sm flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-[#005a75]/40 group"
                 >
                   <div>
-                    <div className="w-full h-64 sm:h-72 rounded-2xl bg-[#daf1f6]/30 overflow-hidden mb-5 border border-[#e5eff3] relative flex items-center justify-center">
+                    <div className="w-full h-52 sm:h-56 rounded-2xl bg-[#daf1f6]/30 overflow-hidden mb-5 border border-[#e5eff3] relative flex items-center justify-center">
                       {photo ? (
                         <img
                           src={photo}
                           alt={expert.name}
-                          width="288"
-                          height="288"
+                          width="240"
+                          height="224"
                           loading="lazy"
                           decoding="async"
                           className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500"
@@ -138,14 +138,16 @@ export function HiringPage() {
                       )}
                     </div>
 
-                    <span className="text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full bg-[#daf1f6] text-[#005a75] inline-block mb-2">
-                      {expert.specialty || "Talent Expert"}
-                    </span>
+                    <div className="min-h-[42px] flex items-center mb-2.5">
+                      <span className="text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-lg bg-[#daf1f6] text-[#005a75] leading-snug">
+                        {expert.specialty || "Talent Expert"}
+                      </span>
+                    </div>
 
-                    <h4 className="text-lg font-bold text-[#061a22] group-hover:text-[#005a75] transition-colors">
+                    <h4 className="text-lg font-bold text-[#061a22] group-hover:text-[#005a75] transition-colors mb-2">
                       {expert.name}
                     </h4>
-                    <p className="text-xs text-[#455c65] mt-2 leading-relaxed">
+                    <p className="text-xs text-[#455c65] leading-relaxed min-h-[96px] sm:min-h-[105px]">
                       {expert.bio}
                     </p>
                   </div>
