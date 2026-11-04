@@ -56,7 +56,7 @@ export function HiringPage() {
         </div>
       </PageHeader>
 
-      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-[#f8fafc]">
+      <section className="pt-12 sm:pt-16 pb-8 sm:pb-10 px-6 sm:px-8 bg-[#f8fafc]">
         <div className="max-w-[1240px] mx-auto">
           <div className="mb-12 text-center sm:text-left">
             <span className="text-xs uppercase tracking-[0.2em] text-[#005a75] font-bold block mb-1">
@@ -163,9 +163,9 @@ export function HiringPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-gradient-to-b from-[#f0f6f8]/60 via-[#f8fafc] to-[#f8fafc] border-t border-[#e5eff3]">
+      <section className="pt-8 sm:pt-10 pb-16 sm:pb-20 px-6 sm:px-8 bg-gradient-to-b from-[#f0f6f8]/60 via-[#f8fafc] to-[#f8fafc] border-t border-[#e5eff3]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
             <span className="text-xs uppercase tracking-[0.2em] text-[#005a75] font-bold block mb-1">
               DOMAIN SECTORS
             </span>
