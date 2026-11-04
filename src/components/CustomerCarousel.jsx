@@ -13,7 +13,7 @@ const ROW_1_COMPANIES = [
     sector: "Next-Gen Workflow Tech",
     logo: (
       <svg
-        className="w-4 h-4 text-[#061a22]"
+        className="w-6 h-6 text-[#061a22]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -33,7 +33,7 @@ const ROW_1_COMPANIES = [
       <img
         src={snowflakeLogo}
         alt="Snowflake"
-        className="h-4 max-w-[20px] object-contain"
+        className="h-6 max-w-[28px] object-contain"
       />
     ),
   },
@@ -42,7 +42,7 @@ const ROW_1_COMPANIES = [
     sector: "Employee Commute SaaS",
     logo: (
       <svg
-        className="w-4 h-4 text-[#00b4d8]"
+        className="w-6 h-6 text-[#00b4d8]"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
@@ -55,7 +55,7 @@ const ROW_1_COMPANIES = [
     sector: "Application Security",
     logo: (
       <svg
-        className="w-4 h-4 text-[#00c975]"
+        className="w-6 h-6 text-[#00c975]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -71,7 +71,7 @@ const ROW_1_COMPANIES = [
     sector: "Cloud Data Resiliency",
     logo: (
       <svg
-        className="w-4 h-4 text-[#ff9e1b]"
+        className="w-6 h-6 text-[#ff9e1b]"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
@@ -83,14 +83,14 @@ const ROW_1_COMPANIES = [
     name: "NEWRØCKET",
     sector: "Enterprise Service Management",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#005a75] shadow-[0_0_6px_#005a75]" />
+      <span className="w-4 h-4 rounded-full bg-[#005a75] shadow-[0_0_8px_#005a75]" />
     ),
   },
   {
     name: "TransUnion",
     sector: "Global Information & Insights",
     logo: (
-      <span className="w-5 h-5 rounded-full bg-[#00a6ca] text-white text-[10px] font-black italic flex items-center justify-center shadow-[0_0_6px_rgba(0,166,202,0.4)]">
+      <span className="w-7 h-7 rounded-full bg-[#00a6ca] text-white text-xs font-black italic flex items-center justify-center shadow-[0_0_8px_rgba(0,166,202,0.4)]">
         tu
       </span>
     ),
@@ -99,7 +99,7 @@ const ROW_1_COMPANIES = [
     name: "genpact",
     sector: "Professional Services",
     logo: (
-      <div className="w-3.5 h-3.5 rotate-45 bg-gradient-to-tr from-[#d62828] to-[#f77f00] rounded-[2px] shadow-[0_0_6px_rgba(214,40,40,0.4)]" />
+      <div className="w-5 h-5 rotate-45 bg-gradient-to-tr from-[#d62828] to-[#f77f00] rounded-[3px] shadow-[0_0_8px_rgba(214,40,40,0.4)]" />
     ),
   },
   {
@@ -107,7 +107,7 @@ const ROW_1_COMPANIES = [
     symbolSuffix: ">",
     sector: "Digital Engineering & Tech",
     logo: (
-      <span className="text-[#84cc16] font-black text-[15px] leading-none">
+      <span className="text-[#84cc16] font-black text-xl leading-none">
         &gt;
       </span>
     ),
@@ -119,7 +119,7 @@ const ROW_1_COMPANIES = [
       <img
         src={teConnectivityLogo}
         alt="TE Connectivity"
-        className="h-3.5 max-w-[20px] object-contain"
+        className="h-5.5 max-w-[36px] object-contain"
       />
     ),
   },
@@ -127,14 +127,14 @@ const ROW_1_COMPANIES = [
     name: "novo holdings",
     sector: "Life Sciences & Healthcare",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#004e89] shadow-[0_0_6px_#004e89]" />
+      <span className="w-4 h-4 rounded-full bg-[#004e89] shadow-[0_0_8px_#004e89]" />
     ),
   },
   {
     name: "Davies",
     sector: "Insurance & Consulting Ops",
     logo: (
-      <div className="w-3.5 h-3.5 rounded-[3px] bg-gradient-to-br from-[#7209b7] via-[#3a86ff] to-[#4cc9f0] flex items-center justify-center text-white text-[9px] font-bold">
+      <div className="w-6 h-6 rounded-[4px] bg-gradient-to-br from-[#7209b7] via-[#3a86ff] to-[#4cc9f0] flex items-center justify-center text-white text-xs font-bold">
         D
       </div>
     ),
@@ -146,7 +146,7 @@ const ROW_1_COMPANIES = [
       <img
         src={proeonLogo}
         alt="PROEON"
-        className="h-3.5 max-w-[20px] object-contain rounded-xs"
+        className="h-5.5 max-w-[34px] object-contain rounded-xs"
       />
     ),
   },
@@ -154,14 +154,14 @@ const ROW_1_COMPANIES = [
     name: "OKVA",
     sector: "Enterprise Systems",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#00a3e0] shadow-[0_0_6px_#00a3e0]" />
+      <span className="w-4 h-4 rounded-full bg-[#00a3e0] shadow-[0_0_8px_#00a3e0]" />
     ),
   },
   {
     name: "BOBST",
     sector: "Packaging Machinery",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-[1px] bg-[#e63946] shadow-[0_0_6px_#e63946]" />
+      <span className="w-4 h-4 rounded-[2px] bg-[#e63946] shadow-[0_0_8px_#e63946]" />
     ),
   },
   {
@@ -171,7 +171,7 @@ const ROW_1_COMPANIES = [
       <img
         src={btbLogo}
         alt="Be The Bank"
-        className="h-3 max-w-[20px] object-contain rounded-xs"
+        className="h-5 max-w-[32px] object-contain rounded-xs"
       />
     ),
   },
@@ -185,7 +185,7 @@ const ROW_2_COMPANIES = [
       <img
         src={sapiensLogo}
         alt="Sapiens"
-        className="h-3 max-w-[20px] object-contain"
+        className="h-5 max-w-[32px] object-contain"
       />
     ),
   },
@@ -193,7 +193,7 @@ const ROW_2_COMPANIES = [
     name: "Cognyte",
     sector: "Investigative Analytics",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#0077b6] shadow-[0_0_6px_#0077b6]" />
+      <span className="w-4 h-4 rounded-full bg-[#0077b6] shadow-[0_0_8px_#0077b6]" />
     ),
   },
   {
@@ -201,7 +201,7 @@ const ROW_2_COMPANIES = [
     sector: "Specialty Minerals & Tech",
     logo: (
       <svg
-        className="w-3.5 h-3.5 text-[#00a8cc]"
+        className="w-6 h-6 text-[#00a8cc]"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
@@ -216,7 +216,7 @@ const ROW_2_COMPANIES = [
       <img
         src={octavoLogo}
         alt="Octavo"
-        className="h-4 max-w-[20px] object-contain"
+        className="h-6 max-w-[32px] object-contain"
       />
     ),
   },
@@ -224,15 +224,15 @@ const ROW_2_COMPANIES = [
     name: "CRISIL",
     sector: "S&P Global Analytics",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#d90429] shadow-[0_0_6px_#d90429]" />
+      <span className="w-4 h-4 rounded-full bg-[#d90429] shadow-[0_0_8px_#d90429]" />
     ),
   },
   {
     name: "Quick Heal",
     sector: "Cybersecurity Solutions",
     logo: (
-      <div className="w-3.5 h-3.5 bg-[#f97316] rounded-[2px] flex items-center justify-center shadow-xs">
-        <span className="text-white text-[9px] font-black leading-none">Q</span>
+      <div className="w-6 h-6 bg-[#f97316] rounded-[4px] flex items-center justify-center shadow-xs">
+        <span className="text-white text-xs font-black leading-none">Q</span>
       </div>
     ),
   },
@@ -240,8 +240,8 @@ const ROW_2_COMPANIES = [
     name: "HDFC BANK",
     sector: "Banking & Financial Services",
     logo: (
-      <div className="w-3.5 h-3.5 bg-[#004c8f] rounded-[2px] flex items-center justify-center shadow-[0_0_4px_rgba(0,76,143,0.5)]">
-        <span className="text-white text-[9px] font-bold leading-none">+</span>
+      <div className="w-6 h-6 bg-[#004c8f] rounded-[4px] flex items-center justify-center shadow-[0_0_6px_rgba(0,76,143,0.5)]">
+        <span className="text-white text-xs font-bold leading-none">+</span>
       </div>
     ),
   },
@@ -252,7 +252,7 @@ const ROW_2_COMPANIES = [
       <img
         src={amaraRajaLogo}
         alt="Amara Raja"
-        className="h-4 max-w-[20px] object-contain"
+        className="h-6 max-w-[34px] object-contain"
       />
     ),
   },
@@ -260,8 +260,8 @@ const ROW_2_COMPANIES = [
     name: "AIVID.AI",
     sector: "Computer Vision & AI",
     logo: (
-      <div className="w-3.5 h-3.5 rounded-full bg-blue-100 border border-blue-500 flex items-center justify-center">
-        <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+      <div className="w-6 h-6 rounded-full bg-blue-100 border-2 border-blue-500 flex items-center justify-center">
+        <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
       </div>
     ),
   },
@@ -269,35 +269,35 @@ const ROW_2_COMPANIES = [
     name: "adani",
     sector: "Energy & Infrastructure",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#008080] shadow-[0_0_6px_#008080]" />
+      <span className="w-4 h-4 rounded-full bg-[#008080] shadow-[0_0_8px_#008080]" />
     ),
   },
   {
     name: "GoldenRay",
     sector: "Solar & Clean Energy",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#fb8500] shadow-[0_0_6px_#fb8500]" />
+      <span className="w-4 h-4 rounded-full bg-[#fb8500] shadow-[0_0_8px_#fb8500]" />
     ),
   },
   {
     name: "3i Infotech",
     sector: "Enterprise IT Solutions",
     logo: (
-      <span className="text-[#0077b6] font-black text-xs leading-none">3i</span>
+      <span className="text-[#0077b6] font-black text-sm leading-none">3i</span>
     ),
   },
   {
     name: "dentsu",
     sector: "Global Media & Advertising",
     logo: (
-      <span className="w-2.5 h-2.5 rounded-full bg-[#00b4d8] shadow-[0_0_6px_#00b4d8]" />
+      <span className="w-4 h-4 rounded-full bg-[#00b4d8] shadow-[0_0_8px_#00b4d8]" />
     ),
   },
   {
     name: "Straive",
     sector: "EdTech & Data Solutions",
     logo: (
-      <div className="w-3.5 h-3.5 rounded-[3px] bg-[#f77f00] flex items-center justify-center text-white text-[9px] font-black">
+      <div className="w-6 h-6 rounded-[4px] bg-[#f77f00] flex items-center justify-center text-white text-xs font-black">
         S
       </div>
     ),
@@ -305,7 +305,7 @@ const ROW_2_COMPANIES = [
   {
     name: "THIESS",
     sector: "Mining & Infrastructure Services",
-    logo: <span className="text-[#f77f00] text-[13px] leading-none">▲</span>,
+    logo: <span className="text-[#f77f00] text-lg leading-none">▲</span>,
   },
   {
     name: "gentrack",
@@ -314,7 +314,7 @@ const ROW_2_COMPANIES = [
       <img
         src={gentrackLogo}
         alt="Gentrack"
-        className="h-4 max-w-[20px] object-contain"
+        className="h-6 max-w-[32px] object-contain"
       />
     ),
   },
@@ -325,25 +325,25 @@ const DOUBLED_COMPANIES = [...ALL_COMPANIES, ...ALL_COMPANIES];
 
 export function CustomerCarousel() {
   return (
-    <section className="bg-[#f8fafc] py-5 sm:py-6 border-y border-[#e5eff3] overflow-hidden select-none relative">
+    <section className="bg-[#f8fafc] py-6 sm:py-8 border-y border-[#e5eff3] overflow-hidden select-none relative">
       <div className="carousel-container relative overflow-hidden">
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#f8fafc] to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#f8fafc] to-transparent z-10" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#f8fafc] to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#f8fafc] to-transparent z-10" />
 
-        <div className="flex overflow-hidden py-1">
+        <div className="flex overflow-hidden py-1.5">
           <div
-            className="carousel-track-left shrink-0 items-center gap-3 sm:gap-3.5 flex"
+            className="carousel-track-left shrink-0 items-center gap-4 sm:gap-5 flex"
             style={{ animationDuration: "65s" }}
           >
             {DOUBLED_COMPANIES.map((company, idx) => (
               <div
                 key={`chip-${company.name}-${idx}`}
-                className="inline-flex items-center gap-2.5 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-white border border-[#d5e2e7] hover:border-[#005a75] shadow-xs hover:shadow-[0_4px_16px_rgba(0,90,117,0.12)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer shrink-0 group select-none"
+                className="inline-flex items-center gap-3 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-white border border-[#d5e2e7] hover:border-[#005a75] shadow-xs hover:shadow-[0_6px_20px_rgba(0,90,117,0.14)] transition-all duration-200 hover:-translate-y-1 cursor-pointer shrink-0 group select-none"
               >
-                <div className="shrink-0 w-4.5 h-4.5 flex items-center justify-center">
+                <div className="shrink-0 w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center">
                   {company.logo}
                 </div>
-                <span className="text-[13px] sm:text-[13.5px] font-bold text-[#061a22] group-hover:text-[#005a75] tracking-tight whitespace-nowrap transition-colors">
+                <span className="text-[14px] sm:text-[15.5px] font-bold text-[#061a22] group-hover:text-[#005a75] tracking-tight whitespace-nowrap transition-colors">
                   {company.name}
                   {company.symbolSuffix && (
                     <span className="text-[#84cc16] ml-0.5">
