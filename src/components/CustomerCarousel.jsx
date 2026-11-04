@@ -1,5 +1,3 @@
-import { Sparkles } from "lucide-react";
-
 import snowflakeLogo from "../assets/images/logo/snoflake.webp";
 import teConnectivityLogo from "../assets/images/logo/TE_Connectivity_logo.svg_-300x162.webp";
 import proeonLogo from "../assets/images/logo/Proeons.webp";
@@ -167,7 +165,7 @@ const ROW_1_COMPANIES = [
     ),
   },
   {
-    name: "Be The Bank,",
+    name: "Be The Bank",
     sector: "Digital Fintech Solutions",
     logo: (
       <img
@@ -327,32 +325,23 @@ const DOUBLED_ROW_2 = [...ROW_2_COMPANIES, ...ROW_2_COMPANIES];
 
 export function CustomerCarousel() {
   return (
-    <section className="bg-[#edf4f7] py-7 sm:py-8 border-y border-[#d5e2e7] overflow-hidden select-none relative shadow-[inset_0_1px_3px_rgba(0,90,117,0.03),inset_0_-1px_3px_rgba(0,90,117,0.03)]">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-center sm:justify-start mb-3.5 sm:mb-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-[#d5e2e7] shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#005a75]" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#005a75]">
-              Trusted By World-Class Tech Giants & Global Enterprises
-            </span>
-          </div>
-        </div>
+    <section className="bg-[#FEF7E4] py-3.5 sm:py-4.5 border-y border-[#EDE0C4] overflow-hidden select-none relative">
+      <div className="carousel-container relative overflow-hidden space-y-2.5 sm:space-y-3">
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#FEF7E4] to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#FEF7E4] to-transparent z-10" />
 
-        <div className="carousel-container relative overflow-hidden space-y-2.5 sm:space-y-3 py-1">
-          <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#edf4f7] to-transparent z-10" />
-          <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#edf4f7] to-transparent z-10" />
-
-          <div className="flex overflow-hidden">
-            <div className="carousel-track-left shrink-0 items-center gap-3 sm:gap-3.5">
-              {DOUBLED_ROW_1.map((company, idx) => (
-                <div
-                  key={`r1-${company.name}-${idx}`}
-                  className="inline-flex items-center gap-2.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-[10px] bg-white border border-[#d5e2e7] hover:border-[#005a75] hover:shadow-[0_4px_14px_rgba(0,90,117,0.1)] transition-all duration-200 shadow-[0_1px_4px_rgba(0,90,117,0.04)] hover:scale-[1.02] cursor-pointer"
-                >
-                  <div className="shrink-0 w-5 h-5 flex items-center justify-center">
+        <div className="flex overflow-hidden py-0.5">
+          <div className="carousel-track-left shrink-0 items-center">
+            {DOUBLED_ROW_1.map((company, idx) => (
+              <span
+                key={`r1-${company.name}-${idx}`}
+                className="inline-flex items-center"
+              >
+                <span className="inline-flex items-center gap-2 text-[13px] sm:text-[14px] md:text-[15px] font-extrabold text-[#005a75] uppercase tracking-[0.14em] hover:text-[#FF5A36] transition-colors cursor-pointer whitespace-nowrap">
+                  <span className="shrink-0 w-4 h-4 flex items-center justify-center opacity-85">
                     {company.logo}
-                  </div>
-                  <span className="text-[12.5px] sm:text-[13.5px] font-bold text-[#061a22] tracking-tight whitespace-nowrap">
+                  </span>
+                  <span>
                     {company.name}
                     {company.symbolSuffix && (
                       <span className="text-[#84cc16] ml-0.5">
@@ -360,27 +349,33 @@ export function CustomerCarousel() {
                       </span>
                     )}
                   </span>
-                </div>
-              ))}
-            </div>
+                </span>
+                <span className="text-[#005a75] font-black text-base sm:text-lg px-3.5 sm:px-5 select-none opacity-60">
+                  •
+                </span>
+              </span>
+            ))}
           </div>
+        </div>
 
-          <div className="flex overflow-hidden">
-            <div className="carousel-track-right shrink-0 items-center gap-3 sm:gap-3.5">
-              {DOUBLED_ROW_2.map((company, idx) => (
-                <div
-                  key={`r2-${company.name}-${idx}`}
-                  className="inline-flex items-center gap-2.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-[10px] bg-white border border-[#d5e2e7] hover:border-[#005a75] hover:shadow-[0_4px_14px_rgba(0,90,117,0.1)] transition-all duration-200 shadow-[0_1px_4px_rgba(0,90,117,0.04)] hover:scale-[1.02] cursor-pointer"
-                >
-                  <div className="shrink-0 w-5 h-5 flex items-center justify-center">
+        <div className="flex overflow-hidden py-0.5">
+          <div className="carousel-track-right shrink-0 items-center">
+            {DOUBLED_ROW_2.map((company, idx) => (
+              <span
+                key={`r2-${company.name}-${idx}`}
+                className="inline-flex items-center"
+              >
+                <span className="inline-flex items-center gap-2 text-[13px] sm:text-[14px] md:text-[15px] font-extrabold text-[#005a75] uppercase tracking-[0.14em] hover:text-[#FF5A36] transition-colors cursor-pointer whitespace-nowrap">
+                  <span className="shrink-0 w-4 h-4 flex items-center justify-center opacity-85">
                     {company.logo}
-                  </div>
-                  <span className="text-[12.5px] sm:text-[13.5px] font-bold text-[#061a22] tracking-tight whitespace-nowrap">
-                    {company.name}
                   </span>
-                </div>
-              ))}
-            </div>
+                  <span>{company.name}</span>
+                </span>
+                <span className="text-[#005a75] font-black text-base sm:text-lg px-3.5 sm:px-5 select-none opacity-60">
+                  •
+                </span>
+              </span>
+            ))}
           </div>
         </div>
       </div>
