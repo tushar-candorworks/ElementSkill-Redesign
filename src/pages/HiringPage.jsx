@@ -117,16 +117,16 @@ export function HiringPage() {
                   className="bg-white rounded-[24px] p-6 border border-[#e5eff3] shadow-sm flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-[#005a75]/40 group"
                 >
                   <div>
-                    <div className="w-full h-48 rounded-2xl bg-[#daf1f6]/30 overflow-hidden mb-5 border border-[#e5eff3] relative flex items-center justify-center">
+                    <div className="w-full h-64 sm:h-72 rounded-2xl bg-[#daf1f6]/30 overflow-hidden mb-5 border border-[#e5eff3] relative flex items-center justify-center">
                       {photo ? (
                         <img
                           src={photo}
                           alt={expert.name}
-                          width="240"
-                          height="192"
+                          width="288"
+                          height="288"
                           loading="lazy"
                           decoding="async"
-                          className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                          className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500"
                         />
                       ) : (
                         <div className="flex items-center justify-center text-3xl font-bold text-[#005a75]/60">
