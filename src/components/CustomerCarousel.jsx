@@ -320,61 +320,38 @@ const ROW_2_COMPANIES = [
   },
 ];
 
-const DOUBLED_ROW_1 = [...ROW_1_COMPANIES, ...ROW_1_COMPANIES];
-const DOUBLED_ROW_2 = [...ROW_2_COMPANIES, ...ROW_2_COMPANIES];
+const ALL_COMPANIES = [...ROW_1_COMPANIES, ...ROW_2_COMPANIES];
+const DOUBLED_COMPANIES = [...ALL_COMPANIES, ...ALL_COMPANIES];
 
 export function CustomerCarousel() {
   return (
-    <section className="bg-[#FEF7E4] py-3.5 sm:py-4.5 border-y border-[#EDE0C4] overflow-hidden select-none relative">
-      <div className="carousel-container relative overflow-hidden space-y-2.5 sm:space-y-3">
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#FEF7E4] to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#FEF7E4] to-transparent z-10" />
+    <section className="bg-[#f8fafc] py-5 sm:py-6 border-y border-[#e5eff3] overflow-hidden select-none relative">
+      <div className="carousel-container relative overflow-hidden">
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#f8fafc] to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#f8fafc] to-transparent z-10" />
 
-        <div className="flex overflow-hidden py-0.5">
-          <div className="carousel-track-left shrink-0 items-center">
-            {DOUBLED_ROW_1.map((company, idx) => (
-              <span
-                key={`r1-${company.name}-${idx}`}
-                className="inline-flex items-center"
+        <div className="flex overflow-hidden py-1">
+          <div
+            className="carousel-track-left shrink-0 items-center gap-3 sm:gap-3.5 flex"
+            style={{ animationDuration: "65s" }}
+          >
+            {DOUBLED_COMPANIES.map((company, idx) => (
+              <div
+                key={`chip-${company.name}-${idx}`}
+                className="inline-flex items-center gap-2.5 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-white border border-[#d5e2e7] hover:border-[#005a75] shadow-xs hover:shadow-[0_4px_16px_rgba(0,90,117,0.12)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer shrink-0 group select-none"
               >
-                <span className="inline-flex items-center gap-2 text-[13px] sm:text-[14px] md:text-[15px] font-extrabold text-[#005a75] uppercase tracking-[0.14em] hover:text-[#FF5A36] transition-colors cursor-pointer whitespace-nowrap">
-                  <span className="shrink-0 w-4 h-4 flex items-center justify-center opacity-85">
-                    {company.logo}
-                  </span>
-                  <span>
-                    {company.name}
-                    {company.symbolSuffix && (
-                      <span className="text-[#84cc16] ml-0.5">
-                        {company.symbolSuffix}
-                      </span>
-                    )}
-                  </span>
+                <div className="shrink-0 w-4.5 h-4.5 flex items-center justify-center">
+                  {company.logo}
+                </div>
+                <span className="text-[13px] sm:text-[13.5px] font-bold text-[#061a22] group-hover:text-[#005a75] tracking-tight whitespace-nowrap transition-colors">
+                  {company.name}
+                  {company.symbolSuffix && (
+                    <span className="text-[#84cc16] ml-0.5">
+                      {company.symbolSuffix}
+                    </span>
+                  )}
                 </span>
-                <span className="text-[#005a75] font-black text-base sm:text-lg px-3.5 sm:px-5 select-none opacity-60">
-                  •
-                </span>
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex overflow-hidden py-0.5">
-          <div className="carousel-track-right shrink-0 items-center">
-            {DOUBLED_ROW_2.map((company, idx) => (
-              <span
-                key={`r2-${company.name}-${idx}`}
-                className="inline-flex items-center"
-              >
-                <span className="inline-flex items-center gap-2 text-[13px] sm:text-[14px] md:text-[15px] font-extrabold text-[#005a75] uppercase tracking-[0.14em] hover:text-[#FF5A36] transition-colors cursor-pointer whitespace-nowrap">
-                  <span className="shrink-0 w-4 h-4 flex items-center justify-center opacity-85">
-                    {company.logo}
-                  </span>
-                  <span>{company.name}</span>
-                </span>
-                <span className="text-[#005a75] font-black text-base sm:text-lg px-3.5 sm:px-5 select-none opacity-60">
-                  •
-                </span>
-              </span>
+              </div>
             ))}
           </div>
         </div>
