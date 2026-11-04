@@ -245,15 +245,59 @@ export function HiringPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-[#f8fafc]">
+      <section className="py-16 sm:py-24 px-6 sm:px-8 bg-gradient-to-b from-[#f8fafc] via-[#eaf3f6]/40 to-[#f8fafc] border-t border-[#d5e2e7]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-xs uppercase tracking-[0.2em] text-[#005a75] font-bold block mb-1">
-              HIRING FAQS
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#061a22]">
-              Frequently Asked Questions
-            </h2>
+          <div className="text-center max-w-4xl mx-auto mb-14">
+            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3">
+              <svg
+                className="w-6 h-6 text-[#005a75] shrink-0"
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.8"
+                strokeLinecap="round"
+              >
+                <line x1="28" y1="16" x2="16" y2="16" />
+                <line x1="26" y1="23" x2="18" y2="27" />
+                <line x1="26" y1="9" x2="18" y2="5" />
+              </svg>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#061a22] tracking-tight relative">
+                <span className="relative inline-block pb-1.5">
+                  Frequently Asked Questions
+                  <svg
+                    className="absolute -bottom-1 left-0 w-full h-3.5 text-[#005a75]"
+                    viewBox="0 0 160 14"
+                    fill="none"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M3 10 C45 3, 115 2, 157 9"
+                      stroke="currentColor"
+                      strokeWidth="4.5"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+              </h2>
+
+              <svg
+                className="w-6 h-6 text-[#005a75] shrink-0"
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.8"
+                strokeLinecap="round"
+              >
+                <line x1="4" y1="16" x2="16" y2="16" />
+                <line x1="6" y1="23" x2="14" y2="27" />
+                <line x1="6" y1="9" x2="14" y2="5" />
+              </svg>
+            </div>
+
+            <p className="text-[15px] sm:text-base text-[#455c65] font-normal leading-relaxed pt-1 md:whitespace-nowrap">
+              Common questions about how our executive team and delivery practice partner with enterprise clients.
+            </p>
           </div>
 
           <FAQAccordion items={faq} />
